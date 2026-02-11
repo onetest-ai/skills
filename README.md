@@ -28,13 +28,31 @@ octo skills update --all
 
 ## Available Skills
 
+### Workflow
+
 | Skill | Description | Tags |
 |-------|-------------|------|
-| [pause](skills/pause/) | Preserve cognitive state before stopping work | workflow, handoff |
-| [quick](skills/quick/) | Execute ad-hoc tasks quickly without heavyweight planning | development, quick-fix, utility |
-| [verify](skills/verify/) | Conversational verification and user acceptance testing | testing, qa, verification |
-| [map-codebase](skills/map-codebase/) | Parallel codebase analysis for onboarding | analysis, documentation |
+| [quick](skills/quick/) | Execute ad-hoc tasks quickly without heavyweight planning | development, quick-fix |
+| [verify](skills/verify/) | Conversational verification and user acceptance testing | testing, qa |
 | [discuss](skills/discuss/) | Structured requirements discussion with gray-area identification | planning, requirements |
+| [pause](skills/pause/) | Preserve cognitive state before stopping work | workflow, handoff |
+| [doc-coauthoring](skills/doc-coauthoring/) | Structured 3-stage workflow for co-authoring docs and specs | writing, collaboration |
+| [map-codebase](skills/map-codebase/) | Parallel codebase analysis for onboarding | analysis, documentation |
+
+### Document Processing
+
+| Skill | Description | Dependencies |
+|-------|-------------|-------------|
+| [pdf](skills/pdf/) | Read, create, merge, split, watermark, fill forms, encrypt, OCR | pypdf, pdfplumber, reportlab |
+| [docx](skills/docx/) | Create, read, and edit Word documents | python-docx, pandoc |
+| [xlsx](skills/xlsx/) | Create, read, edit, and analyze Excel spreadsheets | openpyxl, pandas |
+| [pptx](skills/pptx/) | Create and edit PowerPoint presentations with design guidelines | python-pptx, Pillow |
+
+### Meta
+
+| Skill | Description |
+|-------|-------------|
+| [skill-creator](skills/skill-creator/) | Guide for creating new Octo skills for the marketplace |
 
 ## How Skills Work
 
