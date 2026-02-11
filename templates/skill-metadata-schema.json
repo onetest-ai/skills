@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Octo Skill Metadata",
+  "description": "YAML frontmatter schema for SKILL.md files",
+  "type": "object",
+  "required": ["name", "version", "author", "description", "tags"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "description": "Skill identifier (lowercase-with-dashes)"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version (MAJOR.MINOR.PATCH)"
+    },
+    "author": {
+      "type": "string",
+      "description": "GitHub username of the skill author"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "One-line description for search results"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Category tags for filtering"
+    },
+    "model-invocation": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the agent can invoke this skill proactively"
+    },
+    "dependencies": {
+      "type": "object",
+      "properties": {
+        "python": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "pip package specifiers"
+        },
+        "npm": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "npm global packages"
+        },
+        "mcp": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["server", "package"],
+            "properties": {
+              "server": { "type": "string" },
+              "package": { "type": "string" },
+              "args": { "type": "array", "items": { "type": "string" } },
+              "env": { "type": "object", "additionalProperties": { "type": "string" } }
+            }
+          },
+          "description": "MCP server configurations"
+        },
+        "system": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "System packages (prompt-only, never auto-installed)"
+        }
+      }
+    },
+    "requires": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "command": { "type": "string", "description": "Required CLI command" },
+          "env": { "type": "string", "description": "Required environment variable" },
+          "reason": { "type": "string", "description": "Why this requirement exists" }
+        }
+      }
+    },
+    "permissions": {
+      "type": "object",
+      "properties": {
+        "filesystem": { "type": "string", "enum": ["read", "write", "execute"] },
+        "network": { "type": "boolean" },
+        "shell": { "type": "boolean" },
+        "mcp_servers": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

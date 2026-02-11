@@ -1,0 +1,182 @@
+[
+  {
+    "name": "discuss",
+    "version": "1.0.0",
+    "author": "onetest-ai",
+    "description": "Structured requirements discussion — identifies gray areas and gathers implementation decisions before planning.",
+    "tags": [
+      "planning",
+      "requirements",
+      "discussion"
+    ],
+    "model_invocation": true,
+    "dependencies": {
+      "python": [],
+      "npm": [],
+      "mcp": [],
+      "system": []
+    },
+    "requires": [],
+    "permissions": {
+      "filesystem": "write",
+      "network": false,
+      "shell": false,
+      "mcp_servers": []
+    },
+    "files": [
+      "README.md",
+      "SKILL.md"
+    ],
+    "stats": {
+      "commits": 0,
+      "contributors": 0,
+      "created": "",
+      "last_updated": ""
+    },
+    "download_url": "https://raw.githubusercontent.com/onetest-ai/skills/main/skills/discuss/SKILL.md"
+  },
+  {
+    "name": "map-codebase",
+    "version": "1.0.0",
+    "author": "onetest-ai",
+    "description": "Analyze an existing codebase in parallel — produces structured docs on stack, architecture, quality, and risks.",
+    "tags": [
+      "analysis",
+      "documentation",
+      "onboarding"
+    ],
+    "model_invocation": true,
+    "dependencies": {
+      "python": [],
+      "npm": [],
+      "mcp": [],
+      "system": []
+    },
+    "requires": [],
+    "permissions": {
+      "filesystem": "write",
+      "network": false,
+      "shell": true,
+      "mcp_servers": []
+    },
+    "files": [
+      "README.md",
+      "SKILL.md"
+    ],
+    "stats": {
+      "commits": 0,
+      "contributors": 0,
+      "created": "",
+      "last_updated": ""
+    },
+    "download_url": "https://raw.githubusercontent.com/onetest-ai/skills/main/skills/map-codebase/SKILL.md"
+  },
+  {
+    "name": "pause",
+    "version": "1.0.0",
+    "author": "onetest-ai",
+    "description": "Preserve cognitive state before stopping work. Creates structured handoff notes for seamless resume.",
+    "tags": [
+      "workflow",
+      "handoff",
+      "state-management"
+    ],
+    "model_invocation": false,
+    "dependencies": {
+      "python": [],
+      "npm": [],
+      "mcp": [],
+      "system": []
+    },
+    "requires": [],
+    "permissions": {
+      "filesystem": "write",
+      "network": false,
+      "shell": false,
+      "mcp_servers": []
+    },
+    "files": [
+      "README.md",
+      "SKILL.md"
+    ],
+    "stats": {
+      "commits": 0,
+      "contributors": 0,
+      "created": "",
+      "last_updated": ""
+    },
+    "download_url": "https://raw.githubusercontent.com/onetest-ai/skills/main/skills/pause/SKILL.md"
+  },
+  {
+    "name": "quick",
+    "version": "1.0.0",
+    "author": "onetest-ai",
+    "description": "Execute ad-hoc tasks quickly — minimal planning, no heavyweight agents. For small fixes and one-off changes.",
+    "tags": [
+      "development",
+      "quick-fix",
+      "utility"
+    ],
+    "model_invocation": true,
+    "dependencies": {
+      "python": [],
+      "npm": [],
+      "mcp": [],
+      "system": []
+    },
+    "requires": [],
+    "permissions": {
+      "filesystem": "write",
+      "network": false,
+      "shell": true,
+      "mcp_servers": []
+    },
+    "files": [
+      "README.md",
+      "SKILL.md"
+    ],
+    "stats": {
+      "commits": 0,
+      "contributors": 0,
+      "created": "",
+      "last_updated": ""
+    },
+    "download_url": "https://raw.githubusercontent.com/onetest-ai/skills/main/skills/quick/SKILL.md"
+  },
+  {
+    "name": "verify",
+    "version": "1.0.0",
+    "author": "onetest-ai",
+    "description": "Conversational verification and user acceptance testing. Walks through behaviors, infers severity, auto-plans fixes.",
+    "tags": [
+      "testing",
+      "qa",
+      "verification"
+    ],
+    "model_invocation": true,
+    "dependencies": {
+      "python": [],
+      "npm": [],
+      "mcp": [],
+      "system": []
+    },
+    "requires": [],
+    "permissions": {
+      "filesystem": "write",
+      "network": false,
+      "shell": true,
+      "mcp_servers": []
+    },
+    "files": [
+      "README.md",
+      "SKILL.md"
+    ],
+    "stats": {
+      "commits": 0,
+      "contributors": 0,
+      "created": "",
+      "last_updated": ""
+    },
+    "download_url": "https://raw.githubusercontent.com/onetest-ai/skills/main/skills/verify/SKILL.md"
+  }
+]
